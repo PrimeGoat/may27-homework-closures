@@ -103,6 +103,15 @@ console.log(`My new balance is now ${myAccount.balance()}`);
 // Using closure
 // Write a function multiply that takes a number
 // When an instance is created I should be able to always multiply by the number that is passed in the instance
+function math(num1) {
+    return function multiply(num2) {
+        return num1 * num2;
+    };
+}
+
+// I'm not sure what exactly the instructions meant, but I guess they wanted something like this to be done?
+
+console.log(math(2)(4));
 
 
 //4
